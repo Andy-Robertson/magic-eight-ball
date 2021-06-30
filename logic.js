@@ -2,9 +2,12 @@
 let shakeButton = document.getElementById("shake-btn");
 let screen = document.getElementById("display");
 
+let message = "";
+
 // Adds event listener to the shakeButton
 shakeButton.addEventListener("click", () => {
   generateMessage();
+  screen.value = message;
 });
 
 // Declares the message variable used to store the corresponding output string
@@ -12,7 +15,6 @@ shakeButton.addEventListener("click", () => {
 // Picks the message depending on the random number generated
 
 const generateMessage = () => {
-  let message = "";
   // Generates a random number between 0 and 19;
   let randomMessageNumber = Math.round(Math.random() * 19);
 
@@ -78,8 +80,4 @@ const generateMessage = () => {
       message = "Very doubtful.";
       break;
   }
-
-  return message;
 };
-
-console.log(message);
