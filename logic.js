@@ -2,7 +2,8 @@
 let shakeButton = document.getElementById("shake-btn");
 let screen = document.getElementById("display");
 
-let message = "";
+let message = "Ask any question!";
+screen.value = message;
 
 // Adds event listener to the shakeButton
 shakeButton.addEventListener("click", () => {
