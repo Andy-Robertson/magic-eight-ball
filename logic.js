@@ -80,5 +80,6 @@ const generateMessage = () => {
     case 19:
       message = "Very doubtful.";
       break;
+    // no default needed
   }
 };
