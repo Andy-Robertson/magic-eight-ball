@@ -11,8 +11,6 @@ shakeButton.addEventListener("click", () => {
   screen.value = message;
 });
 
-// Declares the message variable used to store the corresponding output string
-
 // Picks the message depending on the random number generated
 
 const generateMessage = () => {
